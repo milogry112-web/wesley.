@@ -1,0 +1,34 @@
+{
+  "name": "EternalForge",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "AetherDungeon": {
+        "$className": "Folder",
+        "Shared": { "$path": "src/shared" }
+      }
+    },
+    "ServerScriptService": {
+      "AetherDungeon": { "$path": "src/server" }
+    },
+    "StarterPlayer": {
+      "$properties": { "CameraMaxZoomDistance": 45 },
+      "StarterPlayerScripts": {
+        "AetherDungeonClient": { "$path": "src/client" }
+      }
+    },
+    "Workspace": {
+      "$properties": {
+        "StreamingEnabled": true,
+        "StreamingMinRadius": 128,
+        "StreamingTargetRadius": 256,
+        "Gravity": 196.2,
+        "FallenPartsDestroyHeight": -100
+      }
+    },
+    "Lighting": {
+      "$properties": { "Technology": "ShadowMap" }
+    },
+    "SoundService": { "$properties": { "RespectFilteringEnabled": true } }
+  }
+}
